@@ -1,0 +1,51 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_carrot_market/models/icon_menu.dart';
+import 'package:flutter_carrot_market/theme.dart';
+
+class CardIconMenu extends StatelessWidget {
+  final List<IconMenu> iconMenuList;
+
+  const CardIconMenu({super.key, required this.iconMenuList});
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      elevation: 0.5,
+      margin: EdgeInsets.zero,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(0.0)),
+      child: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          children: List.generate(
+            iconMenuList.length,
+            (index) => _buildRowIconItem(
+              iconMenuList[index].title,
+              iconMenuList[index].iconData,
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildRowIconItem(String title, IconData myIcon) {
+    return SizedBox(
+      height: 50,
+      child: Row(
+        children: [
+          Icon(
+            myIcon,
+            size: 17,
+          ),
+          const SizedBox(
+            width: 20,
+          ),
+          Text(
+            title,
+            style: textTheme().titleMedium,
+          ),
+        ],
+      ),
+    );
+  }
+}
