@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_carrot_market/models/product.dart';
+import 'package:flutter_carrot_market/screens/components/appbar_preferred_size.dart';
 import 'package:flutter_carrot_market/screens/components/pruduct_item.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -31,14 +32,7 @@ class HomeScreen extends StatelessWidget {
               icon: const Icon(CupertinoIcons.list_dash), onPressed: () {}),
           IconButton(icon: const Icon(CupertinoIcons.bell), onPressed: () {})
         ],
-        bottom: const PreferredSize(
-          preferredSize: Size.fromHeight(0.5),
-          child: Divider(
-            thickness: 0.5,
-            height: 0.5,
-            color: Colors.grey,
-          ),
-        ),
+        bottom: bottom(),
       ),
       body: ListView.separated(
         itemBuilder: ((context, index) {

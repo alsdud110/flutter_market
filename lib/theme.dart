@@ -34,11 +34,25 @@ AppBarTheme appTheme() {
   );
 }
 
+IconThemeData iconTheme() {
+  return const IconThemeData(color: Colors.black);
+}
+
+BottomNavigationBarThemeData bottomNavigationBarTheme() {
+  return const BottomNavigationBarThemeData(
+    selectedItemColor: Colors.orange,
+    unselectedItemColor: Colors.black54,
+    showUnselectedLabels: true,
+  );
+}
+
 ThemeData theme() {
   return ThemeData(
     scaffoldBackgroundColor: Colors.white,
     textTheme: textTheme(),
     appBarTheme: appTheme(),
     primarySwatch: Colors.orange,
+    iconTheme: iconTheme(),
+    bottomNavigationBarTheme: bottomNavigationBarTheme(),
   );
 }
