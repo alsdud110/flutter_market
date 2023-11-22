@@ -51,7 +51,7 @@ class MyCarrotHeader extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(32.5),
                 child: Image.network(
-                  "https://placeimg.com/200/100/people",
+                  "https://picsum.photos/id/875/200/100?grayscale",
                   fit: BoxFit.cover,
                 ),
               ),

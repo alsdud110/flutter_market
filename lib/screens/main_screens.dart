@@ -29,7 +29,7 @@ class _MainScreensState extends State<MainScreens> {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
-        // selectedItemColor: Colors.black,
+        selectedItemColor: Colors.black,
         unselectedItemColor: Colors.black54,
         backgroundColor: Colors.white,
         type: BottomNavigationBarType.fixed, // 3개 이상의 item을 표시할 때
