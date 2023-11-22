@@ -3,12 +3,12 @@ import 'package:google_fonts/google_fonts.dart';
 
 TextTheme textTheme() {
   return TextTheme(
-    displayLarge: GoogleFonts.openSans(fontSize: 18, color: Colors.black),
+    displayLarge: GoogleFonts.openSans(fontSize: 18.0, color: Colors.black),
     displayMedium: GoogleFonts.openSans(
-        fontSize: 16, color: Colors.black, fontWeight: FontWeight.bold),
-    bodyLarge: GoogleFonts.openSans(fontSize: 16, color: Colors.black),
-    bodyMedium: GoogleFonts.openSans(fontSize: 14, color: Colors.grey),
-    titleMedium: GoogleFonts.openSans(fontSize: 15, color: Colors.black),
+        fontSize: 16.0, color: Colors.black, fontWeight: FontWeight.bold),
+    bodyLarge: GoogleFonts.openSans(fontSize: 16.0, color: Colors.black),
+    bodyMedium: GoogleFonts.openSans(fontSize: 14.0, color: Colors.grey),
+    titleMedium: GoogleFonts.openSans(fontSize: 15.0, color: Colors.black),
   );
 }
 
@@ -17,20 +17,11 @@ AppBarTheme appTheme() {
     centerTitle: false,
     color: Colors.white,
     elevation: 0.0,
-    toolbarTextStyle: TextTheme(
-      titleLarge: GoogleFonts.nanumGothic(
-        fontSize: 16,
-        fontWeight: FontWeight.bold,
-        color: Colors.black,
-      ),
-    ).bodyMedium,
-    titleTextStyle: TextTheme(
-      titleLarge: GoogleFonts.nanumGothic(
-        fontSize: 16,
-        fontWeight: FontWeight.bold,
-        color: Colors.black,
-      ),
-    ).titleLarge,
+    titleTextStyle: GoogleFonts.nanumGothic(
+      fontSize: 16,
+      fontWeight: FontWeight.bold,
+      color: Colors.black,
+    ),
   );
 }
 
